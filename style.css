@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+}
+.currency-converter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.currency-converter .currency-form{
+    width: 200px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0px 10px;
+    background:  #FFD700;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0,25);
+}
+
+.currency-converter .currency-form input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    padding: 10px 0px 0px;
+}
+
+.currency-converter .currency-form select {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 0px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.currency-converter .eq{
+    font-size: 19px;
+    color: #111;
+}
+
+@media(max-width:500px){
+    .currency-converter {
+        width: 200px;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+}
