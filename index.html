@@ -6,23 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency-Converter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <div class="currency-converter">
-        <div class="currency-form currency-from">
-            <input type="text" value="1">
-            <select>
-                <option>USD</option>
-            </select>
-        </div>
-        <div class="eq">=</div>
-        <div class="currency-form currency-to">
-            <input type="text" >
-            <select>
-                <option>KES</option>
-            </select>
-        </div>
+
+    <div class="wrapper">
+        <header>Currency-Converter</header>
+        <form action="#">
+            <div class="amount">
+              <p>Enter Amount</p>
+              <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+              <div class="from">
+                <p>From</p>
+                <div class="select-box">
+                  <img src="https://countryflagsapi.com/png/eg" alt="flag">
+                  <select>
+
+                  </select>
+                </div>
+              </div>
+              <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+              <div class="to">
+                <p>To</p>
+                <div class="select-box">
+                  <img src="https://countryflagsapi.com/png/ke" alt="flag">
+                  <select>
+
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="exchange-rate">Getting exchange rate...</div>
+            <button>Get Exchange Rate</button>
+        </form>
     </div>
-<script src="script.js" type="text/javascript"></script>
+<script src="js/country_list.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
